@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyInventoryTool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EasyInventoryTool</h1>
+        <h2 class="powered-by">powered by Daniel C.</h2>
+        <div id="tabButtons" class="tab-buttons" style="display: none;">
+            <div class="tab-button-container">
+                <button id="part1Button" class="tab-button active" onclick="showPart(1)">PARTE 1</button>
+                <button id="part2Button" class="tab-button" onclick="showPart(2)">PARTE 2</button>
+            </div>
+        </div>
+        <div id="part1" class="part active">
+            <input type="file" id="fileInput" accept=".xls, .xlsx">
+            <div id="part1TableContainer"></div>
+            <button id="saveButton" style="display: none;" onclick="saveData('part1')">GUARDAR</button>
+        </div>
+        <div id="part2" class="part">
+            <div id="part2TableContainer"></div>
+            <button id="saveButtonPart2" onclick="saveData('part2')">GUARDAR</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

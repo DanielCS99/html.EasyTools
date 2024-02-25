@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eeeae1; /* Color de fondo */
+    color: #706c6c; /* Color gris para las letras */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    text-align: center;
+    color: #EF8B47; /* Color naranja claro para el título */
+    margin-bottom: 10px; /* Ajustar el margen inferior */
+    text-shadow:
+    2px 2px 2px #5a351a, 
+    1px 1px 1px #241408;
+}
+
+h2.powered-by {
+    text-align: center;
+    font-size: calc(0.25 * 2em); /* Tamaño de fuente */
+    margin-top: -5px; /* Ajustar el margen superior */
+    margin-bottom: 20px; /* Añadir un espacio entre el título y el texto "Powered by" */
+    color: #706c6c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tab-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tab-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    background-color: #c9e9a5; /* Color del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px; /* Añadir margen entre los botones */
+    text-shadow: 1px 1px 1px #646060;
+    font-weight: bold;
+}
+
+.tab-button.active {
+    background-color: #87bd4d; /* Color del botón activo */
+}
+
+.part {
+    display: none;
+}
+
+.part.active {
+    display: block;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 20px auto;
+    font-style: italic;
+    font-size: 0.6em;
+    margin-top: 15%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.7em; /* Aumentar ligeramente el tamaño de la letra */
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    white-space: nowrap; /* No envolver texto */
+    overflow: hidden; /* Ocultar texto que desborda */
+    text-overflow: ellipsis; /* Mostrar puntos suspensivos para texto que desborda */
+}
+
+th {
+    background-color: #ef8a479f;
+    font-size: 1em;
+    color: #2e2d2cfd;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #c9e9a5; /* Color del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px #646060;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #87bd4d; /* Cambio de color al pasar el ratón */
+}
+
+td.editable {
+    cursor: pointer;
+}
+
+input.edit-input {
+    width: 80%;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 0.9em; /* Aumentar ligeramente el tamaño de la letra */
+    text-align: left; /* Centrar el texto */
+}
+
+.error {
+    background-color: #f8f540; /* Color de fondo rojo para errores */
+    color: #131212;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
