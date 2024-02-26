@@ -51,7 +51,7 @@ function filterData(data) {
         }
         return a[14].localeCompare(b[14]);
     });
-    return data.map(row => [row[1], row[8], row[2], row[14], row[4], row[6], row[7]]);
+    return data.map(row => [row[14], row[2], row[8], row[4], row[6], row[7]]);
 }
 
 function displayData(data, container, partId) {
@@ -59,7 +59,7 @@ function displayData(data, container, partId) {
     const headerRow = document.createElement('tr');
 
     // Define los encabezados de columna
-    const headers = ['Almacén', 'Código', 'Clave', 'Línea', 'Descripción', 'Sistema', 'Físico'];
+    const headers = ['Línea', 'Clave', 'Código', 'Descripción', 'Sistema', 'Físico'];
 
     headers.forEach(headerText => {
         const header = document.createElement('th');
@@ -75,7 +75,7 @@ function displayData(data, container, partId) {
         rowData.forEach((cellData, colIndex) => {
             const cell = document.createElement('td');
             cell.textContent = cellData;
-            if (colIndex === 6) {
+            if (colIndex === 5) {
                 cell.classList.add('editable');
                 cell.setAttribute('data-original-value', cellData);
                 cell.setAttribute('data-row', rowIndex);
@@ -102,7 +102,7 @@ function handleCellEdit(rowIndex, colIndex, partId) {
 }
 
 function handleInputBlur(row, col, input, partId) {
-    const newValue = input.value.slice(0, 7); // Limitar a 6 caracteres
+    const newValue = input.value.slice(0, 4); // Limitar a 4 caracteres
     const cell = document.querySelector(`#${partId} [data-row="${row}"][data-col="${col}"]`);
     cell.textContent = newValue;
     const originalValue = cell.getAttribute('data-original-value');
