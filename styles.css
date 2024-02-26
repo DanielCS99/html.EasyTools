@@ -7,9 +7,9 @@ body {
 }
 
 .container {
-    max-width: max-content;
+    max-width: 500px;
     margin: 0 auto;
-    padding: 100px;
+    padding: 20px;
 }
 
 h1 {
@@ -77,16 +77,17 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    font-size: 0.5em; /* Aumentar ligeramente el tamaño de la letra */
+    font-size: 0.6em; /* Aumentar ligeramente el tamaño de la letra */
 }
 
 table, th, td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 4px;
     text-align: center;
     white-space: nowrap; /* No envolver texto */
     overflow: hidden; /* Ocultar texto que desborda */
     text-overflow: ellipsis; /* Mostrar puntos suspensivos para texto que desborda */
+    font-size: 0.6em;
 }
 
 th {
@@ -117,10 +118,10 @@ td.editable {
 }
 
 input.edit-input {
-    width: 50%;
-    padding: 5px;
+    width: 80%;
+    padding: 1px;
     box-sizing: border-box;
-    font-size: 0.5em; /* Aumentar ligeramente el tamaño de la letra */
+    font-size: 0.9em; /* Aumentar ligeramente el tamaño de la letra */
     text-align: left; /* Centrar el texto */
 }
 
