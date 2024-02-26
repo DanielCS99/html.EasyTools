@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 500px;
+    max-width: fit-content;
     margin: 0 auto;
     padding: 20px;
 }
@@ -118,11 +118,11 @@ td.editable {
 }
 
 input.edit-input {
-    width: 80%;
-    padding: 1px;
-    box-sizing: border-box;
+    width: 20px;
+    padding: .1px;
+    box-sizing: content-box;
     font-size: 0.9em; /* Aumentar ligeramente el tamaño de la letra */
-    text-align: left; /* Centrar el texto */
+    text-align: center; /* Centrar el texto */
 }
 
 .error {
