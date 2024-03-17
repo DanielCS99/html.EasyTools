@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-image: linear-gradient(#a5bbc2da, #a5bbc2da),
                         url(../img/WP.jpg);
-    color: #4d4848; /* Color gris para las letras */
+    color: #1c1d1d; /* Color gris para las letras */
 }
 
 .container {
