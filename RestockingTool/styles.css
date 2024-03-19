@@ -45,7 +45,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    background-color: #dafffb8f;
+    background-color: #c2e0ddcb;
     box-shadow: 
     10px 10px 10px #706c6ca4, 
     5px 5px 5px #9c9696a4;
@@ -68,6 +68,7 @@ th {
 
 td {
     font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
 button:hover {
