@@ -2,7 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(#a5bbc2da, #a5bbc2da),
+    background: linear-gradient(#a5bbc2da, #a5bbc2da),
                         url(./img/WP.jpg);
     color: #4d4848; /* Color gris para las letras */
 }
@@ -28,8 +28,8 @@ h2.powered-by {
 }
 
 button {
-    height: 200px;
-    width: 200px;
+    height: 80px;
+    width: 80px;
     background-color: #71d1cb;
     border: 3px solid rgba(53, 51, 51, 0.87);
     border-radius: 10%;
@@ -50,7 +50,7 @@ p.name {
     text-shadow: 
     1.5px 1.5px 1.5px rgb(136, 130, 130),
     1px 1px 1px rgba(95, 91, 91, 0.801);            
-    font-size: 20px;
+    font-size: 10px;
 }
 
 img {
