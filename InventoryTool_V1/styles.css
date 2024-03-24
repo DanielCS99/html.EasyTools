@@ -1,0 +1,290 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(#a5bbc2da, #a5bbc2da),
+                        url(../img/WP.jpg);
+    color: #1c1d1d; /* Color gris para las letras */
+}
+
+.container {
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: Georgia, serif;
+    text-align: center;
+    color: #012a47; /* Color naranja claro para el título */
+    margin-bottom: 10px; /* Ajustar el margen inferior */
+    text-shadow:
+    4px 4px 4px #706c6ca4, 
+    1px 1px 1px #9c9696a4;
+}
+
+h2.powered-by {
+    text-align: center;
+    font-size: calc(0.25 * 2em); /* Tamaño de fuente */
+    margin-top: -5px; /* Ajustar el margen superior */
+    margin-bottom: 20px; /* Añadir un espacio entre el título y el texto "Powered by" */
+    color: #615c5c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tab-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tab-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    background-color: #71d1cb; /* Color del botón */
+    color: #001C30;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px; /* Añadir margen entre los botones */
+    text-shadow: 1px 1px 1px #706c6ca4;
+    font-weight: bold;
+    border: 1px solid rgba(53, 51, 51, 0.87);
+    box-shadow: 3px 3px 3px #706c6ca4;
+}
+
+.tab-button.active {
+    background-color: #3fb3ab; /* Color del botón activo */
+}
+
+.part {
+    display: none;
+}
+
+.part.active {
+    display: block;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 20px auto;
+    font-style: italic;
+    font-size: 0.6em;
+    margin-top: 15%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.6em; /* Aumentar ligeramente el tamaño de la letra */
+    background-color: #c2e0ddcb;
+    box-shadow: 
+    10px 10px 10px #413d3da4, 
+    5px 5px 5px #706b6ba4;
+}
+
+table, th, td {
+    border: 1px solid #acaaa7da;
+    padding: 4px;
+    text-align: center;
+    white-space: nowrap; /* No envolver texto */
+    font-size: .9em;
+}
+
+th {
+    background-color: #176B87;
+    font-size: 1em;
+    color: #DAFFFB;
+    border-radius: 10%;
+}
+
+td{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #71d1cb; /* Color del botón */
+    color: #001C30;
+    border: 1px solid rgba(53, 51, 51, 0.87);
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px #706c6ca4;
+    font-weight: bold;
+    box-shadow: 3px 3px 3px #706c6ca4;
+}
+
+button:hover {
+    background-color: #3fb3ab; /* Cambio de color al pasar el ratón */
+}
+
+td.editable {
+    cursor: pointer;
+}
+
+input.edit-input {
+    width: 20px;
+    padding: .1px;
+    box-sizing: content-box;
+    font-size: 0.9em; /* Aumentar ligeramente el tamaño de la letra */
+    text-align: center; /* Centrar el texto */
+}
+
+.error {
+    background-color: #2edfd3; /* Color de fondo rojo para errores */
+    color: #131212;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+    @media (max-width: 680px) {    
+        .container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 40px;
+        font-family: Georgia, serif;
+        text-align: center;
+        color: #012a47; /* Color naranja claro para el título */
+        margin-bottom: 5px; /* Ajustar el margen inferior */
+        text-shadow:
+        4px 4px 4px #706c6ca4, 
+        1px 1px 1px #9c9696a4;
+    }
+    
+    h2.powered-by {
+        text-align: center;
+        font-size: calc(0.25 * 2em); /* Tamaño de fuente */
+        margin-top: -5px; /* Ajustar el margen superior */
+        margin-bottom: 20px; /* Añadir un espacio entre el título y el texto "Powered by" */
+        color: #615c5c;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .tab-buttons {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .tab-button-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .tab-button {
+        padding: 10px 20px;
+        background-color: #71d1cb; /* Color del botón */
+        color: #001C30;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 0 5px; /* Añadir margen entre los botones */
+        text-shadow: 1px 1px 1px #706c6ca4;
+        font-weight: bold;
+        border: 1px solid rgba(53, 51, 51, 0.87);
+        box-shadow: 3px 3px 3px #706c6ca4;
+    }
+    
+    .tab-button.active {
+        background-color: #3fb3ab; /* Color del botón activo */
+    }
+    
+    .part {
+        display: none;
+    }
+    
+    .part.active {
+        display: block;
+    }
+    
+    input[type="file"] {
+        display: block;
+        margin: 20px auto;
+        font-style: italic;
+        font-size: 0.6em;
+        margin-top: 15%;
+    }
+    
+    table {
+        border-collapse: collapse;
+        margin-top: 18px;
+        margin: 2px;
+        background-color: #c2e0ddcb;
+        box-shadow: 
+        10px 10px 10px #413d3da4, 
+        5px 5px 5px #706b6ba4;
+    }
+    
+    table, th, td {
+        border: 1px solid #acaaa7da;
+        text-align: center;
+        white-space: pre-line; /* No envolver texto */
+        font-size: 10px;
+    }
+    
+    th {
+        background-color: #176B87;
+        font-size: 10px;
+        color: #DAFFFB;
+    }
+    
+    td{
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
+    
+    button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #71d1cb; /* Color del botón */
+        color: #001C30;
+        border: 1px solid rgba(53, 51, 51, 0.87);
+        border-radius: 5px;
+        cursor: pointer;
+        text-shadow: 1px 1px 1px #706c6ca4;
+        font-weight: bold;
+        box-shadow: 3px 3px 3px #706c6ca4;
+        font-size: 11px;
+    }
+    
+    button:hover {
+        background-color: #3fb3ab; /* Cambio de color al pasar el ratón */
+    }
+    
+    td.editable {
+        cursor: pointer;
+    }
+    
+    input.edit-input {
+        width: 20px;
+        padding: .1px;
+        box-sizing: content-box;
+        font-size: 0.9em; /* Aumentar ligeramente el tamaño de la letra */
+        text-align: center; /* Centrar el texto */
+    }
+    
+    .error {
+        background-color: #2edfd3; /* Color de fondo rojo para errores */
+        color: #131212;
+    }
+    
+    .container::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    
+}
