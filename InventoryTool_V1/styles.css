@@ -19,8 +19,8 @@ h1 {
     color: #012a47; /* Color naranja claro para el título */
     margin-bottom: 10px; /* Ajustar el margen inferior */
     text-shadow:
-    4px 4px 4px #706c6ca4, 
-    1px 1px 1px #9c9696a4;
+    4px 4px 4px #413d3da4, 
+    1px 1px 1px #706b6ba4;
 }
 
 h2.powered-by {
