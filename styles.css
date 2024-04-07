@@ -68,7 +68,7 @@ button:hover {
     background-color: #3fb3ab;
 }
 
-    @media (min-width: 810px) {
+    @media (min-width: 650px) {
      
         button {
             width: 190px;
